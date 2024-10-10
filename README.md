@@ -29,6 +29,7 @@ Kaleem is a smart customer support solution powered by Generative AI, designed t
 
 To get a local copy of the project up and running, follow these steps:
 
+
 ### Prerequisites
 
 Make sure you have Node.js and npm installed on your machine. You can check if you have them installed by running:
@@ -39,7 +40,22 @@ npm -v
 
 ### Installation
 Clone the repository:
-
+```bash
 git clone https://github.com/your-username/Kaleem.git
+```
+
+### Navigate into the project directory:
+```bash
+cd Kaleem
+```
+### Install the required packages:
+```bash
+npm install
+```
+### Start the development server:
+```bash
+npm start
+```
+
 
 
