@@ -1,0 +1,310 @@
+/* src/styles.css */
+
+:root {
+    --color-light: #F5F5F5;
+    --color-green: #91C37D;
+    --color-dark: #1A1A1A;
+    --color-white: #FFF;
+  }
+/* Add this to your styles.css */
+html {
+    scroll-behavior: smooth;
+}
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: var(--color-white); /* Light background color */
+    color: var(--color-dark); /* Dark text color */
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 4rem;
+    background-color: var(--color-light); /* Green background for header */
+  }
+  
+  .logo img {
+    height: 60px; /* Adjust logo size */
+  }
+  
+  nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 15px;
+  }
+  
+  nav a {
+    color: var(--color-green); /* Light color for links */
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  nav a:hover {
+    color: var(--color-dark); /* Change color on hover */
+  }
+  
+  section {
+    padding: 40px;
+    margin: 20px 0;
+    border-radius: 5px; /* Rounded corners */
+  }
+  
+  h2 {
+    color: var(--color-dark); /* Dark color for section headings */
+  }
+  
+/* src/styles.css */
+
+.hero {
+    display: flex;
+    align-items: center; /* Center content vertically */
+    padding: 2rem 4rem;
+    justify-content: center;
+    text-align: center;
+    gap: 4rem;
+}
+  
+  .hero-text {
+    flex: 1; /* Take up half of the space */
+    padding: 1rem;
+  }
+  
+  .hero-text h1 {
+    font-size: 2.5rem; /* Adjust size as needed */
+    margin: 0 0 20px;
+    color: var(--color-green)
+  }
+  
+  .hero-text p {
+    font-size: 1.4rem; /* Adjust size as needed */
+    margin-bottom: 20px;
+  }
+  
+  .hero-image {
+    flex: 1; /* Take up half of the space */
+    display: flex;
+    justify-content: center; /* Center image horizontally */
+  }
+  
+  .hero-image img {
+    max-width: 100%; /* Responsive image */
+    height: auto; /* Maintain aspect ratio */
+  }
+/* src/styles.css */
+
+.project-description {
+    padding: 60px 20px; /* Increased padding for a spacious look */
+    text-align: center;
+    background-color: var(--color-light);
+    color: var(--color-dark);
+    border: 1px solid var(--color-green); /* Optional border to highlight section */
+    border-radius: 10px; /* Rounded corners for a softer look */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    max-width: 800px; /* Limit width for better readability */
+    margin: 40px auto; /* Center the section */
+}
+
+.project-description h2 {
+    font-size: 2.5rem; /* Larger font size for the heading */
+    margin-bottom: 20px; /* Space below the heading */
+    color: var(--color-green); /* Use accent color for the heading */
+}
+
+.project-description p {
+    font-size: 1.25rem; /* Adjust font size for the paragraph */
+    line-height: 1.6; /* Improve line spacing for readability */
+}
+
+.project-description strong {
+    color: var(--color-green); /* Highlight important words in green */
+}
+/* src/styles.css */
+
+.project-image {
+    display: flex; /* Use flexbox to center the image */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically, if height is set */
+    margin-top: 20px; /* Space above the image */
+    max-width: 600px; /* Limit the width of the image container */
+    margin-left: auto; /* Center the container */
+    margin-right: auto; /* Center the container */
+}
+
+.project-image img {
+    max-width: 100%; /* Responsive image */
+    height: auto; /* Maintain aspect ratio */
+    width: 100%; /* Set width to fill the container */
+}
+
+/* src/styles.css */
+
+.what-we-do {
+    padding: 60px 20px; /* Increased padding for spaciousness */
+    text-align: center;
+    background: #f9f9f9; /* Light background for contrast */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1); /* Deeper shadow for depth */
+    margin: 40px auto; /* Center the section */
+    max-width: 800px; /* Limit width for readability */
+    position: relative; /* Position for pseudo-element */
+}
+
+.what-we-do::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    height: 10px; /* Height of the decorative line */
+    background-color: var(--color-green); /* Accent color */
+    border-radius: 10px; /* Rounded edges for the line */
+}
+
+.what-we-do h2 {
+    font-size: 2.5rem; /* Larger font size for the heading */
+    margin-bottom: 20px; /* Space below the heading */
+    color: var(--color-dark); /* Use dark color for contrast */
+}
+
+.what-we-do .intro {
+    font-size: 1.25rem; /* Intro text size */
+    margin-bottom: 30px; /* Space below intro text */
+    color: var(--color-dark); /* Dark color for readability */
+}
+
+.benefits-list {
+    list-style-type: none; /* Remove default list styles */
+    padding: 0; /* Remove padding */
+}
+
+.benefits-list li {
+    font-size: 1.2rem; /* Adjust font size for list items */
+    margin: 15px 0; /* Space between list items */
+    color: var(--color-dark); /* Dark color for list items */
+    background: #ffffff; /* White background for list items */
+    border-radius: 8px; /* Rounded corners for list items */
+    padding: 15px; /* Padding inside list items */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for list items */
+    transition: transform 0.2s; /* Animation effect */
+}
+
+.benefits-list li:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+}
+
+.benefits-list strong {
+    color: var(--color-green); /* Highlight key phrases */
+}
+/* src/styles.css */
+
+.features {
+    padding: 2rem; /* Increased padding for spaciousness */
+    text-align: center;
+    margin: 40px auto; /* Center the section */
+    max-width: 1200px; /* Wider limit for larger screens */
+}
+
+.features h2 {
+    font-size: 2.5rem; /* Larger font size for the heading */
+    margin-bottom: 20px; /* Space below the heading */
+    color: var(--color-green); /* Accent color for the heading */
+}
+
+.features .intro {
+    font-size: 1.25rem; /* Intro text size */
+    margin-bottom: 30px; /* Space below intro text */
+    color: var(--color-dark); /* Dark color for readability */
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Responsive grid layout */
+    gap: 20px; /* Space between cards */
+}
+
+.feature-card {
+    background: #ffffff; /* White background for cards */
+    border-radius: 10px; /* Rounded corners for cards */
+    padding: 20px; /* Padding inside cards */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+    transition: transform 0.3s; /* Smooth animation for hover */
+    text-align: left; /* Left align text */
+}
+
+.feature-card:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+}
+
+.feature-card h3 {
+    font-size: 1.5rem; /* Heading size for features */
+    color: var(--color-green); /* Accent color for headings */
+    margin-bottom: 10px; /* Space below heading */
+}
+
+.feature-card p {
+    font-size: 1rem; /* Description text size */
+    color: var(--color-dark); /* Dark color for descriptions */
+    line-height: 1.5; /* Improve line spacing */
+}
+
+
+/* src/styles.css */
+
+.footer {
+    background-color: var(--color-light); /* Dark background */
+    color: var(--color-green); /* Light text color */
+    padding: 2rem 4rem;    
+    text-align: center; /* Center-align text */
+}
+
+.footer-content {
+    display: flex; /* Use flexbox for layout */
+    align-items: center; /* Center items horizontally */
+    justify-content: space-between;
+    margin-bottom: 20px; /* Space below content */
+}
+
+.footer img {
+    max-width: 150px; /* Set a max width for the logo */
+    height: auto; /* Maintain aspect ratio */
+    margin-bottom: 20px; /* Space below the logo */
+}
+
+.footer-links {
+    display: flex; /* Flexbox for horizontal alignment */
+    justify-content: center; /* Center links */
+    gap: 15px; /* Space between links */
+}
+
+.footer-links a {
+    color: var(--color-green); /* Accent color for links */
+    text-decoration: none; /* Remove underline */
+    transition: color 0.3s; /* Smooth transition for hover */
+}
+
+.footer-links a:hover {
+    color: var(--color-dark); /* Change color on hover */
+}
+
+.footer-bottom {
+    border-top: 1px solid var(--color-green); /* Top border for separation */
+    padding-top: 10px; /* Space above bottom text */
+}
+
+.footer-bottom p {
+    font-size: 0.875rem; /* Smaller font size for copyright */
+}
+@media (max-width: 768px) {
+    .hero-image img {
+        width: 80%; /* Smaller on smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-image img {
+        width: 100%; /* Full width on mobile */
+    }
+}
